@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4 - Forms</title>
+
+    <!-- Internal CSS -->
+     <style> 
+        form{
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        input, select{
+            display: block;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="radio" i]{
+            display: inline;
+        }
+        label[name="Rate_Content"],
+        label[name="Extra_Comments"],
+        label[name="Rate_Lecturer"]{
+            display: block;
+        }
+
+     </style>
+</head>
+<body>
+  <h1>Working with forms</h1> 
+  
+  <!-- Forms Start -->
+   <!--Create a feedback form for the LCA students based on the Lectures:Full name , Email , Cell, Rate your lecture, Rate the content, Extra -->
+   <form>
+    <!-- Full Name -->
+     <label>Enter your full name:</label>
+     <input type="text" name="full_name" placeholder="John Doe">
+
+     <!-- Email Address-->
+      <label>Enter your email address:</label>
+      <input type="email" name="email" placeholder="johndoe@email.com">
+
+      <!-- Cellphone Number -->
+       <label>Enter your cellphone number:</label>
+       <input type="number" name="cell_number" placeholder="081 234 5678">
+
+       <!-- Module -->
+        <label>Which module did you complete?</label>
+        <select name="module_name">
+            <option value="Foundation_Module">Foundation Module</option>
+            <option value="Fronted_Web_Dev">Fronted Web Dev</option>
+        </select>
+
+         <!-- Rate Module from 1 to 5 -->
+
+        <label class="lecture_label">Rate from 1 to 5 </label>
+        <input type="radio" name="l_rating" value="1"> <label>1</label>
+        <input type="radio" name="l_rating" value="2"> <label>2</label>
+        <input type="radio" name="l_rating" value="3"> <label>3</label>
+        <input type="radio" name="l_rating" value="4"> <label>4</label>
+        <input type="radio" name="l_rating" value="5"> <label>5</label>
+
+        <!-- Lecture -->
+
+         <label class="lecture_label">Who was your lecture?</label>
+         <select name="lecture_name">
+            <option value="Khanyiso_Haman">Khanyiso Haman</option>
+            <option value="Mattew_Brown">Mattew Brown</option>
+            <option value="Ruth_Nzola">Ruth Nzola</option>
+         </select>
+        
+         <!-- Rate Lecturer from 1 to 5 -->
+          <label class="label_label">Rate from 1 to 5 </label>
+          <input type="radio" name="l_rating" value="1"> <label>1</label>
+          <input type="radio" name="l_rating" value="2"> <label>2</label>
+          <input type="radio" name="l_rating" value="3"> <label>3</label>
+          <input type="radio" name="l_rating" value="4"> <label>4</label>
+          <input type="radio" name="l_rating" value="5"> <label>5</label>
+
+          <!--Submit Button-->
+          <button type="submit">Submit</button>
+
+   </form>
+
+</body>
+</html>

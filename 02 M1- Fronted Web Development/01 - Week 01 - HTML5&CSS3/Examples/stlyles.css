@@ -1,0 +1,19 @@
+/* Basic Resent */
+* {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+}
+
+/* General Body Stlying */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height:normal;
+    color:#333;
+    background-color: rgba(230, 3, 139, 0.258);
+    background-image: url(images/it.jpg);
+    padding: 20px;
+    background-repeat: inherit;
+    background-size: cover;
+    background-position: center;
+}

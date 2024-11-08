@@ -1,0 +1,95 @@
+*{
+   margin:0 ;
+   padding: 0; 
+   box-sizing: border-box ;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:black ;
+    line-height: 1,6 ;
+}
+
+header{
+    text-align: center;
+    background-color: #333;
+    padding: 10px 0 ;
+}
+
+.filter-button{
+    display: flex;
+    justify-content: center;
+    gap: 10px ;
+}
+
+.filter-btn{
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px ;
+    transition: background-color 0.3s;
+}
+
+.filter-btn:hover{
+    background-color: #666;
+}
+
+main{
+    padding: 20px;
+}
+
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+}
+
+.image-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1 );
+    overflow: hidden;
+    position: relative;
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    right: 0%;
+    background: rgba(0, 0, 0, 0.6 );
+    color: white;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image-card:hover .image-overlay {
+    opacity: 1;
+}
+
+.landscape {
+    border-left: 5px solid #ff6347;
+}
+
+.potrait {
+    border-left: 5px solid #4682b4 ;
+}
+
+.architecture {
+    border-left: 5px solid #32cd32;
+}
+
+@media (max-width:768px ) {
+    .image-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    }
+}

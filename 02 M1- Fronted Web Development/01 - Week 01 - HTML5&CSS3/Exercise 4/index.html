@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+
+    <!-- Internal CSS -->
+        <style>
+            form{
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 500px;
+            margin: 0 auto;
+            }
+            input, select{
+            display: block;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        </style>
+
+</head>
+<body>
+    <h1>CREATING A FORM</h1>
+
+    <!-- Form Start-->
+
+    <form action=" https://formspree.io/f/xpwzpzrd" method="post" >
+        <!-- First Name -->
+         <label>Enter your first name:</label>
+         <input type="text" name="first_name" placeholder="Asiphesona">
+
+        <!--Last Name -->
+         <label>Enter your last name:</label>
+         <input type="text" name="last_name" placeholder="Dumzela">
+
+        <!-- Gender -->
+          <label>Select your gender</label>
+          <select name="gender">
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+            <option value="Other">Other</option>
+          </select>
+
+        <!-- Date of birth -->
+           <label>Select your date of birth</label>
+           <input type="date" name="date_of_birth">
+        
+        <!-- Email Address -->
+            <label>Enter your email address:</label>
+            <input type="email" name="email" placeholder="asiphesona@email.com">
+
+        <!-- Send Button -->
+
+            <button type="Send">Send</button>
+
+    </form>
+
+<!-- Search Button -->
+    <form action=" http://httpbin.org/get" method="get">
+        <input type="search" name="search_name">
+        <input type="button" name="search_name"  value="search">
+ <!-- Submit Button -->
+ <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
